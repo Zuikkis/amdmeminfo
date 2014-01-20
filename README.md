@@ -12,14 +12,3 @@ make
 sudo ./amdmeminfo
 
 
--------------------------
-Example output:
-
-
-AMDMemInfo by Teemu Suikki <zuikkis@gmail.com>
------------------------------------
-Found card:  1002:6798 (AMD Radeon HD7970 / R9 280x)
-Subvendor:   0x1043
-Subdevice:   0x44c
-Memory type: SK Hynix H5GQ2H24AFR
-

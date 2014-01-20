@@ -1,5 +1,5 @@
 /*
- * AMDMemInfo, (c) 2014 Teemu Suikki <zuikkis@gmail.com>
+ * AMDMemInfo, (c) 2014 by Zuikkis <zuikkis@gmail.com>
  *
  * Loosely based on "amdmeminfo" by Joerie de Gram.
  *
@@ -41,7 +41,7 @@ int main()
 	char *devname;
 	int fail =0, manufacturer, model;
 
-	printf("AMDMemInfo by Teemu Suikki <zuikkis@gmail.com>\n");
+	printf("AMDMemInfo by Zuikkis <zuikkis@gmail.com>\n");
 
 	pci = pci_alloc();
 	pci_init(pci);
