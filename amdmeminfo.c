@@ -79,7 +79,7 @@ int main()
 			    if (dev->size[i]==0x40000) {
 				base=(dev->base_addr[i] & 0xfffffff0);
 
-     			  	fd = open ( "/dev/mem", O_RDWR);
+     			  	fd = open ( "/dev/mem", O_RDONLY);
   			  	pcimem = (int *) mmap(NULL, 0x20000, PROT_READ, MAP_SHARED, fd, base);
 				if (pcimem == MAP_FAILED) {
 				    fail++;
