@@ -7,7 +7,7 @@ Get GDDR5 memory information from AMD Radeon HD7950, HD7970, R9 280x, R9 290, R9
 -------------------------
 Installation and usage:
 
-sudo apt-get libpci-dev
+sudo apt-get install libpci-dev
 
 make
 
