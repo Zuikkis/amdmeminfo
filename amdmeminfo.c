@@ -55,14 +55,18 @@ int main()
 	    ( dev->device_id == 0x679a ||   // hd7950
 	      dev->device_id == 0x6798 ||   // hd7970 / r9 280x
 	      dev->device_id == 0x67b1 ||   // r9 290
-	      dev->device_id == 0x67b0 ))    // r9 290
+	      dev->device_id == 0x67b0 ||   // r9 290
+	      dev->device_id == 0x6811 ||   // r9 270
+	      dev->device_id == 0x6818))
  
 	    {
 			switch (dev->device_id) {
 				case 0x679a: devname="Radeon HD7950"; 			break;
-				case 0x6798: devname="Radeon HD7970 / R9 280x"; break;
+				case 0x6798: devname="Radeon HD7970 / R9 280x"; 	break;
 				case 0x67b1: devname="Radeon R9 290"; 			break;
 				case 0x67b0: devname="Radeon R9 290x"; 			break;
+				case 0x6811: devname="Radeon R9 270";			break;
+				case 0x6818: devname="Radeon HD7870";			break;
 				default: devname="Unknown"; break;
 			}
 
