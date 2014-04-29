@@ -58,17 +58,24 @@ int main()
 	      dev->device_id == 0x67b1 ||   // r9 290
 	      dev->device_id == 0x67b0 ||   // r9 290
 	      dev->device_id == 0x6811 ||   // r9 270
-	      dev->device_id == 0x6818))    // hd7870
- 
+              dev->device_id == 0x6719 ||   // hd6950
+              dev->device_id == 0x6778 ||   // HD6450 device id 1
+	      dev->device_id == 0x6779 ||   // HD6450 device id 2
+	      dev->device_id == 0x6819 ||   // hd7850
+              dev->device_id == 0x6818))    // hd7870
 	    {
 			switch (dev->device_id) {
-				case 0x679a: devname="Radeon HD7950"; 			break;
+				case 0x679a: devname="Radeon HD7950"; 				break;
 				case 0x6798: devname="Radeon HD7970 / R9 280x"; 	break;
-				case 0x679b: devname="Radeon HD7990";		 	break;
-				case 0x67b1: devname="Radeon R9 290"; 			break;
-				case 0x67b0: devname="Radeon R9 290x"; 			break;
-				case 0x6811: devname="Radeon R9 270";			break;
-				case 0x6818: devname="Radeon HD7870";			break;
+				case 0x679b: devname="Radeon HD7990";		 		break;
+				case 0x67b1: devname="Radeon R9 290"; 				break;
+				case 0x67b0: devname="Radeon R9 290x"; 				break;
+				case 0x6811: devname="Radeon R9 270";				break;
+				case 0x6818: devname="Radeon HD7870";				break;
+				case 0x6819: devname="Radeon HD7850";				break;
+				case 0x6719: devname="Radeon HD6950";				break;
+				case 0x6778: devname="Radeon HD6450";				break;
+				case 0x6779: devname="Radeon HD6450";				break;
 				default: devname="Unknown"; break;
 			}
 
